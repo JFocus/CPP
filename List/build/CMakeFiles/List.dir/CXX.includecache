@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jfocus/Documents/Knowledge/CPlusPlus/List/dsexceptions.h
+
+/home/jfocus/Documents/Knowledge/CPlusPlus/List/list.h
+algorithm
+-
+iostream
+-
+stdexcept
+-
+dsexceptions.h
+/home/jfocus/Documents/Knowledge/CPlusPlus/List/dsexceptions.h
+
+/home/jfocus/Documents/Knowledge/CPlusPlus/List/main.cpp
+iostream
+-
+list.h
+/home/jfocus/Documents/Knowledge/CPlusPlus/List/list.h
+vector
+-
+list
+-
+
