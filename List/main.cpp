@@ -101,4 +101,9 @@ int main(int argc, char ** argv)
     } 
     Vector<int> B = A;
     B = A;
+    double C[4]{1,2,3,4};
+    for(auto a : C)
+    {
+            cout<<a<<endl;
+    } 
 }

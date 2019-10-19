@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	main.cpp	/^    Vector<int> A;$/;"	kind:local
 ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	kind:macro	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	404;"	kind:macro	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	407;"	kind:macro	file:
@@ -22,6 +23,7 @@ ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	447
 ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	450;"	kind:macro	file:
 ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	453;"	kind:macro	file:
 ArrayIndexOutOfBoundsException	dsexceptions.h	/^class ArrayIndexOutOfBoundsException { };$/;"	kind:class
+B	main.cpp	/^    Vector<int> B = A;$/;"	kind:local
 COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	kind:macro	file:
 COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	kind:macro	file:
 COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	115;"	kind:macro	file:
@@ -146,6 +148,90 @@ IteratorMismatchException	dsexceptions.h	/^class IteratorMismatchException { };$
 IteratorOutOfBoundsException	dsexceptions.h	/^class IteratorOutOfBoundsException { };$/;"	kind:class
 IteratorUninitializedException	dsexceptions.h	/^class IteratorUninitializedException { };$/;"	kind:class
 LIST_H	list.h	2;"	kind:macro
+List	list.h	/^        friend class List<Object>;$/;"	kind:externvar
+List	list.h	/^    List( )$/;"	kind:function	class:List	access:public	signature:( )
+List	list.h	/^    List( List && rhs )$/;"	kind:function	class:List	access:public	signature:( List && rhs )
+List	list.h	/^    List( const List & rhs )$/;"	kind:function	class:List	access:public	signature:( const List & rhs )
+List	list.h	/^class List$/;"	kind:class
+List::List	list.h	/^    List( )$/;"	kind:function	class:List	access:public	signature:( )
+List::List	list.h	/^    List( List && rhs )$/;"	kind:function	class:List	access:public	signature:( List && rhs )
+List::List	list.h	/^    List( const List & rhs )$/;"	kind:function	class:List	access:public	signature:( const List & rhs )
+List::Node	list.h	/^    struct Node$/;"	kind:struct	class:List	access:private
+List::Node::Node	list.h	/^        Node( Object && d, Node * p = nullptr, Node * n = nullptr )$/;"	kind:function	struct:List::Node	access:public	signature:( Object && d, Node * p = nullptr, Node * n = nullptr )
+List::Node::Node	list.h	/^        Node( const Object & d = Object{ }, Node * p = nullptr, Node * n = nullptr )$/;"	kind:function	struct:List::Node	access:public	signature:( const Object & d = Object{ }, Node * p = nullptr, Node * n = nullptr )
+List::Node::data	list.h	/^        Object  data;$/;"	kind:member	struct:List::Node	access:public
+List::Node::next	list.h	/^        Node   *next;$/;"	kind:member	struct:List::Node	access:public
+List::Node::prev	list.h	/^        Node   *prev;$/;"	kind:member	struct:List::Node	access:public
+List::back	list.h	/^    Object & back( )$/;"	kind:function	class:List	access:public	signature:( )
+List::back	list.h	/^    const Object & back( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::begin	list.h	/^      { erase( begin( ) ); }$/;"	kind:prototype	signature:()
+List::begin	list.h	/^      { insert( begin( ), std::move( x ) ); }$/;"	kind:prototype	signature:()
+List::begin	list.h	/^      { insert( begin( ), x ); }$/;"	kind:prototype	signature:()
+List::begin	list.h	/^    const_iterator begin( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::begin	list.h	/^    iterator begin( )$/;"	kind:function	class:List	access:public	signature:( )
+List::clear	list.h	/^    void clear( )$/;"	kind:function	class:List	access:public	signature:( )
+List::const_iterator	list.h	/^    class const_iterator$/;"	kind:class	class:List	access:public
+List::const_iterator::List	list.h	/^        friend class List<Object>;$/;"	kind:externvar
+List::const_iterator::const_iterator	list.h	/^        const_iterator( ) : current{ nullptr }$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+List::const_iterator::const_iterator	list.h	/^        const_iterator( Node *p ) :  current{ p }$/;"	kind:function	class:List::const_iterator	access:protected	signature:( Node *p )
+List::const_iterator::current	list.h	/^        Node *current;$/;"	kind:member	class:List::const_iterator	access:protected
+List::const_iterator::old	list.h	/^            const_iterator old = *this;$/;"	kind:local
+List::const_iterator::operator !=	list.h	/^        bool operator!= ( const const_iterator & rhs ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( const const_iterator & rhs ) const
+List::const_iterator::operator *	list.h	/^        const Object & operator* ( ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( ) const
+List::const_iterator::operator ++	list.h	/^        const_iterator & operator++ ( )$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+List::const_iterator::operator ++	list.h	/^        const_iterator operator++ ( int )$/;"	kind:function	class:List::const_iterator	access:public	signature:( int )
+List::const_iterator::operator --	list.h	/^        const_iterator & operator-- ( )$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+List::const_iterator::operator --	list.h	/^        const_iterator operator-- ( int )$/;"	kind:function	class:List::const_iterator	access:public	signature:( int )
+List::const_iterator::operator ==	list.h	/^        bool operator== ( const const_iterator & rhs ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( const const_iterator & rhs ) const
+List::const_iterator::retrieve	list.h	/^        Object & retrieve( ) const$/;"	kind:function	class:List::const_iterator	access:protected	signature:( ) const
+List::copy	list.h	/^        List copy = rhs;$/;"	kind:local
+List::empty	list.h	/^    bool empty( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::end	list.h	/^      { insert( end( ), std::move( x ) ); }$/;"	kind:prototype	signature:()
+List::end	list.h	/^      { insert( end( ), x ); }$/;"	kind:prototype	signature:()
+List::end	list.h	/^    const_iterator end( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::end	list.h	/^    iterator end( )$/;"	kind:function	class:List	access:public	signature:( )
+List::erase	list.h	/^    iterator erase( iterator from, iterator to )$/;"	kind:function	class:List	access:public	signature:( iterator from, iterator to )
+List::erase	list.h	/^    iterator erase( iterator itr )$/;"	kind:function	class:List	access:public	signature:( iterator itr )
+List::front	list.h	/^    Object & front( )$/;"	kind:function	class:List	access:public	signature:( )
+List::front	list.h	/^    const Object & front( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::head	list.h	/^    Node *head;$/;"	kind:member	class:List	access:private
+List::init	list.h	/^    void init( )$/;"	kind:function	class:List	access:private	signature:( )
+List::insert	list.h	/^    iterator insert( iterator itr, Object && x )$/;"	kind:function	class:List	access:public	signature:( iterator itr, Object && x )
+List::insert	list.h	/^    iterator insert( iterator itr, const Object & x )$/;"	kind:function	class:List	access:public	signature:( iterator itr, const Object & x )
+List::iterator	list.h	/^    class iterator : public const_iterator$/;"	kind:class	class:List	inherits:const_iterator	access:public
+List::iterator::List	list.h	/^        friend class List<Object>;$/;"	kind:externvar
+List::iterator::iterator	list.h	/^        iterator( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+List::iterator::iterator	list.h	/^        iterator( Node *p ) : const_iterator{ p }$/;"	kind:function	class:List::iterator	access:protected	signature:( Node *p )
+List::iterator::old	list.h	/^            iterator old = *this;$/;"	kind:local
+List::iterator::operator *	list.h	/^        Object & operator* ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+List::iterator::operator *	list.h	/^        const Object & operator* ( ) const$/;"	kind:function	class:List::iterator	access:public	signature:( ) const
+List::iterator::operator ++	list.h	/^        iterator & operator++ ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+List::iterator::operator ++	list.h	/^        iterator operator++ ( int )$/;"	kind:function	class:List::iterator	access:public	signature:( int )
+List::iterator::operator --	list.h	/^        iterator & operator-- ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+List::iterator::operator --	list.h	/^        iterator operator-- ( int )$/;"	kind:function	class:List::iterator	access:public	signature:( int )
+List::operator =	list.h	/^    List & operator= ( List && rhs )$/;"	kind:function	class:List	access:public	signature:( List && rhs )
+List::operator =	list.h	/^    List & operator= ( const List & rhs )$/;"	kind:function	class:List	access:public	signature:( const List & rhs )
+List::p	list.h	/^        Node *p = itr.current;$/;"	kind:local
+List::pop_back	list.h	/^    void pop_back( )$/;"	kind:function	class:List	access:public	signature:( )
+List::pop_front	list.h	/^    void pop_front( )$/;"	kind:function	class:List	access:public	signature:( )
+List::push_back	list.h	/^    void push_back( Object && x )$/;"	kind:function	class:List	access:public	signature:( Object && x )
+List::push_back	list.h	/^    void push_back( const Object & x )$/;"	kind:function	class:List	access:public	signature:( const Object & x )
+List::push_front	list.h	/^    void push_front( Object && x )$/;"	kind:function	class:List	access:public	signature:( Object && x )
+List::push_front	list.h	/^    void push_front( const Object & x )$/;"	kind:function	class:List	access:public	signature:( const Object & x )
+List::size	list.h	/^    int size( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+List::std::move	list.h	/^      { insert( begin( ), std::move( x ) ); }$/;"	kind:prototype	class:List::std	signature:( x )
+List::std::move	list.h	/^      { insert( end( ), std::move( x ) ); }$/;"	kind:prototype	class:List::std	signature:( x )
+List::std::swap	list.h	/^        std::swap( head, rhs.head );$/;"	kind:prototype	class:List::std	signature:( head, rhs.head )
+List::std::swap	list.h	/^        std::swap( tail, rhs.tail );$/;"	kind:prototype	class:List::std	signature:( tail, rhs.tail )
+List::std::swap	list.h	/^        std::swap( theSize, rhs.theSize );$/;"	kind:prototype	class:List::std	signature:( theSize, rhs.theSize )
+List::tail	list.h	/^    Node *tail;$/;"	kind:member	class:List	access:private
+List::theSize	list.h	/^    int   theSize;$/;"	kind:member	class:List	access:private
+List::x	list.h	/^      { insert( begin( ), x ); }$/;"	kind:local
+List::x	list.h	/^      { insert( end( ), x ); }$/;"	kind:local
+List::~List	list.h	/^    ~List( )$/;"	kind:function	class:List	access:public	signature:( )
+Node	list.h	/^        Node( Object && d, Node * p = nullptr, Node * n = nullptr )$/;"	kind:function	struct:List::Node	access:public	signature:( Object && d, Node * p = nullptr, Node * n = nullptr )
+Node	list.h	/^        Node( const Object & d = Object{ }, Node * p = nullptr, Node * n = nullptr )$/;"	kind:function	struct:List::Node	access:public	signature:( const Object & d = Object{ }, Node * p = nullptr, Node * n = nullptr )
+Node	list.h	/^    struct Node$/;"	kind:struct	class:List	access:private
 PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	298;"	kind:macro	file:
 PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	301;"	kind:macro	file:
 PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	304;"	kind:macro	file:
@@ -207,6 +293,10 @@ Vector::copy	list.h	/^        Vector copy = rhs;$/;"	kind:local
 Vector::empty	list.h	/^    bool empty( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
 Vector::end	list.h	/^    const_iterator end( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
 Vector::end	list.h	/^    iterator end( )$/;"	kind:function	class:Vector	access:public	signature:( )
+Vector::endl	list.h	/^        cout<<"call = "<<endl;$/;"	kind:local
+Vector::endl	list.h	/^        cout<<"call = Rvalue"<<endl; $/;"	kind:local
+Vector::endl	list.h	/^        cout<<"call Rvalue"<<endl;$/;"	kind:variable
+Vector::endl	list.h	/^        cout<<"call init"<<endl;$/;"	kind:variable
 Vector::iterator	list.h	/^    typedef Object * iterator;$/;"	kind:typedef	class:Vector	access:public
 Vector::objects	list.h	/^    Object * objects;$/;"	kind:member	class:Vector	access:private
 Vector::operator =	list.h	/^    Vector & operator= ( Vector && rhs )$/;"	kind:function	class:Vector	access:public	signature:( Vector && rhs )
@@ -216,7 +306,7 @@ Vector::operator []	list.h	/^    const Object & operator[]( int index ) const$/;
 Vector::pop_back	list.h	/^    void pop_back( )$/;"	kind:function	class:Vector	access:public	signature:( )
 Vector::push_back	list.h	/^    void push_back( Object && x )$/;"	kind:function	class:Vector	access:public	signature:( Object && x )
 Vector::push_back	list.h	/^    void push_back( const Object & x )$/;"	kind:function	class:Vector	access:public	signature:( const Object & x )
-Vector::reserve	list.h	/^    void reserve( int newCapacity )$/;"	kind:function	class:Vector	access:public	signature:( int newCapacity )
+Vector::reserve	list.h	/^    void reserve( int newCapacity ) \/\/两步，迁移数据，使用新capacity$/;"	kind:function	class:Vector	access:public	signature:( int newCapacity )
 Vector::resize	list.h	/^    void resize( int newSize )$/;"	kind:function	class:Vector	access:public	signature:( int newSize )
 Vector::size	list.h	/^    int size( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
 Vector::std::swap	list.h	/^        std::swap( objects, newArray );$/;"	kind:prototype	class:Vector::std	signature:( objects, newArray )
@@ -227,22 +317,48 @@ Vector::theCapacity	list.h	/^    int theCapacity;$/;"	kind:member	class:Vector	a
 Vector::theSize	list.h	/^    int theSize;$/;"	kind:member	class:Vector	access:private
 Vector::~Vector	list.h	/^    ~Vector( )$/;"	kind:function	class:Vector	access:public	signature:( )
 at	main.cpp	/^            cout<<fifthV.at(i)<<' ';$/;"	kind:prototype	file:	signature:(i)
+back	list.h	/^    Object & back( )$/;"	kind:function	class:List	access:public	signature:( )
 back	list.h	/^    const Object & back ( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
+back	list.h	/^    const Object & back( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+begin	list.h	/^      { erase( begin( ) ); }$/;"	kind:prototype	signature:()
+begin	list.h	/^      { insert( begin( ), std::move( x ) ); }$/;"	kind:prototype	signature:()
+begin	list.h	/^      { insert( begin( ), x ); }$/;"	kind:prototype	signature:()
+begin	list.h	/^    const_iterator begin( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
 begin	list.h	/^    const_iterator begin( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
+begin	list.h	/^    iterator begin( )$/;"	kind:function	class:List	access:public	signature:( )
 begin	list.h	/^    iterator begin( )$/;"	kind:function	class:Vector	access:public	signature:( )
 capacity	list.h	/^    int capacity( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
+clear	list.h	/^    void clear( )$/;"	kind:function	class:List	access:public	signature:( )
 clear	main.cpp	/^    fourth.clear();$/;"	kind:prototype	file:	signature:()
+const_iterator	list.h	/^        const_iterator( ) : current{ nullptr }$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+const_iterator	list.h	/^        const_iterator( Node *p ) :  current{ p }$/;"	kind:function	class:List::const_iterator	access:protected	signature:( Node *p )
+const_iterator	list.h	/^    class const_iterator$/;"	kind:class	class:List	access:public
 const_iterator	list.h	/^    typedef const Object * const_iterator;$/;"	kind:typedef	class:Vector	access:public
+copy	list.h	/^        List copy = rhs;$/;"	kind:local
 copy	list.h	/^        Vector copy = rhs;$/;"	kind:local
 cout	main.cpp	/^    std::cout << "The contents of fifth are: ";$/;"	kind:member	class:std	file:
 cout	main.cpp	/^    std::cout << "The contents of fifth vector are: ";$/;"	kind:member	class:std	file:
 cout	main.cpp	/^    std::cout << "mylist contains:";$/;"	kind:member	class:std	file:
 cout	main.cpp	/^    std::cout << '\\n';$/;"	kind:member	class:std	file:
+current	list.h	/^        Node *current;$/;"	kind:member	class:List::const_iterator	access:protected
+data	list.h	/^        Object  data;$/;"	kind:member	struct:List::Node	access:public
+empty	list.h	/^    bool empty( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
 empty	list.h	/^    bool empty( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
+end	list.h	/^      { insert( end( ), std::move( x ) ); }$/;"	kind:prototype	signature:()
+end	list.h	/^      { insert( end( ), x ); }$/;"	kind:prototype	signature:()
+end	list.h	/^    const_iterator end( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
 end	list.h	/^    const_iterator end( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
+end	list.h	/^    iterator end( )$/;"	kind:function	class:List	access:public	signature:( )
 end	list.h	/^    iterator end( )$/;"	kind:function	class:Vector	access:public	signature:( )
+endl	list.h	/^        cout<<"call = "<<endl;$/;"	kind:local
+endl	list.h	/^        cout<<"call = Rvalue"<<endl; $/;"	kind:local
+endl	list.h	/^        cout<<"call Rvalue"<<endl;$/;"	kind:variable
+endl	list.h	/^        cout<<"call init"<<endl;$/;"	kind:variable
+endl	main.cpp	/^            cout<<a<<endl;$/;"	kind:local
 endl	main.cpp	/^    cout<<endl; $/;"	kind:local
 endl	main.cpp	/^    cout<<endl;$/;"	kind:local
+erase	list.h	/^    iterator erase( iterator from, iterator to )$/;"	kind:function	class:List	access:public	signature:( iterator from, iterator to )
+erase	list.h	/^    iterator erase( iterator itr )$/;"	kind:function	class:List	access:public	signature:( iterator itr )
 features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	kind:variable
 fifth	main.cpp	/^    std::list<int> fifth (myints, myints + sizeof(myints) \/ sizeof(int) );$/;"	kind:prototype	file:	signature:(myints, myints + sizeof(myints) / sizeof(int) )
 fifthV	main.cpp	/^            cout<<fifthV[i]<<' ';$/;"	kind:local
@@ -251,6 +367,9 @@ first	main.cpp	/^    std::list<int> first;                                \/\/ e
 firstV	main.cpp	/^    std::vector<int> firstV;                                \/\/ empty vector of ints$/;"	kind:local
 fourth	main.cpp	/^    std::list<int> fourth (third);                       \/\/ a copy of third$/;"	kind:prototype	file:	signature:(third)
 fourthV	main.cpp	/^    std::vector<int> fourthV (thirdV);                       \/\/ a copy of third$/;"	kind:prototype	file:	signature:(thirdV)
+front	list.h	/^    Object & front( )$/;"	kind:function	class:List	access:public	signature:( )
+front	list.h	/^    const Object & front( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
+head	list.h	/^    Node *head;$/;"	kind:member	class:List	access:private
 info_arch	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	kind:variable
 info_compiler	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	kind:variable
 info_cray	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	kind:variable
@@ -260,6 +379,9 @@ info_simulate	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^cha
 info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	kind:variable
 info_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	kind:variable
 info_version_internal	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	kind:variable
+init	list.h	/^    void init( )$/;"	kind:function	class:List	access:private	signature:( )
+insert	list.h	/^    iterator insert( iterator itr, Object && x )$/;"	kind:function	class:List	access:public	signature:( iterator itr, Object && x )
+insert	list.h	/^    iterator insert( iterator itr, const Object & x )$/;"	kind:function	class:List	access:public	signature:( iterator itr, const Object & x )
 insert	main.cpp	/^    mylist.insert (it,10);                        \/\/ 1 10 2 3 4 5$/;"	kind:prototype	file:	signature:(it,10)
 insert	main.cpp	/^    mylist.insert (it,2,20);                      \/\/ 1 10 20 20 2 3 4 5$/;"	kind:prototype	file:	signature:(it,2,20)
 insert	main.cpp	/^    mylist.insert (it,myvector.begin(),myvector.end());$/;"	kind:prototype	file:	signature:(it,myvector.begin(),myvector.end())
@@ -267,37 +389,79 @@ it	main.cpp	/^        cout<<*it<< ' ';$/;"	kind:local
 it	main.cpp	/^      std::cout << ' ' << *it;$/;"	kind:local
 it	main.cpp	/^      std::cout << *it << ' ';$/;"	kind:local
 it	main.cpp	/^    std::list<int>::iterator it;$/;"	kind:local
+iterator	list.h	/^        iterator( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+iterator	list.h	/^        iterator( Node *p ) : const_iterator{ p }$/;"	kind:function	class:List::iterator	access:protected	signature:( Node *p )
+iterator	list.h	/^    class iterator : public const_iterator$/;"	kind:class	class:List	inherits:const_iterator	access:public
 iterator	list.h	/^    typedef Object * iterator;$/;"	kind:typedef	class:Vector	access:public
 main	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	kind:function	signature:(int argc, char* argv[])
 main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	kind:function	signature:(int argc, char** argv)
 main	main.cpp	/^int main(int argc, char ** argv)$/;"	kind:function	signature:(int argc, char ** argv)
+move	list.h	/^      { insert( begin( ), std::move( x ) ); }$/;"	kind:prototype	class:List::std	signature:( x )
+move	list.h	/^      { insert( end( ), std::move( x ) ); }$/;"	kind:prototype	class:List::std	signature:( x )
 myints	main.cpp	/^    int myints[] = {16,2,77,29};$/;"	kind:local
 mylist	main.cpp	/^    std::list<int> mylist;$/;"	kind:local
 myownvector	main.cpp	/^    int myownvector[] = {16,2,77,29};$/;"	kind:local
+next	list.h	/^        Node   *next;$/;"	kind:member	struct:List::Node	access:public
 objects	list.h	/^    Object * objects;$/;"	kind:member	class:Vector	access:private
+old	list.h	/^            const_iterator old = *this;$/;"	kind:local
+old	list.h	/^            iterator old = *this;$/;"	kind:local
+operator !=	list.h	/^        bool operator!= ( const const_iterator & rhs ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( const const_iterator & rhs ) const
+operator *	list.h	/^        Object & operator* ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+operator *	list.h	/^        const Object & operator* ( ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( ) const
+operator *	list.h	/^        const Object & operator* ( ) const$/;"	kind:function	class:List::iterator	access:public	signature:( ) const
+operator ++	list.h	/^        const_iterator & operator++ ( )$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+operator ++	list.h	/^        const_iterator operator++ ( int )$/;"	kind:function	class:List::const_iterator	access:public	signature:( int )
+operator ++	list.h	/^        iterator & operator++ ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+operator ++	list.h	/^        iterator operator++ ( int )$/;"	kind:function	class:List::iterator	access:public	signature:( int )
+operator --	list.h	/^        const_iterator & operator-- ( )$/;"	kind:function	class:List::const_iterator	access:public	signature:( )
+operator --	list.h	/^        const_iterator operator-- ( int )$/;"	kind:function	class:List::const_iterator	access:public	signature:( int )
+operator --	list.h	/^        iterator & operator-- ( )$/;"	kind:function	class:List::iterator	access:public	signature:( )
+operator --	list.h	/^        iterator operator-- ( int )$/;"	kind:function	class:List::iterator	access:public	signature:( int )
+operator =	list.h	/^    List & operator= ( List && rhs )$/;"	kind:function	class:List	access:public	signature:( List && rhs )
+operator =	list.h	/^    List & operator= ( const List & rhs )$/;"	kind:function	class:List	access:public	signature:( const List & rhs )
 operator =	list.h	/^    Vector & operator= ( Vector && rhs )$/;"	kind:function	class:Vector	access:public	signature:( Vector && rhs )
 operator =	list.h	/^    Vector & operator= ( const Vector & rhs )$/;"	kind:function	class:Vector	access:public	signature:( const Vector & rhs )
+operator ==	list.h	/^        bool operator== ( const const_iterator & rhs ) const$/;"	kind:function	class:List::const_iterator	access:public	signature:( const const_iterator & rhs ) const
 operator []	list.h	/^    Object & operator[]( int index )$/;"	kind:function	class:Vector	access:public	signature:( int index )
 operator []	list.h	/^    const Object & operator[]( int index ) const$/;"	kind:function	class:Vector	access:public	signature:( int index ) const
+p	list.h	/^        Node *p = itr.current;$/;"	kind:local
+pop_back	list.h	/^    void pop_back( )$/;"	kind:function	class:List	access:public	signature:( )
 pop_back	list.h	/^    void pop_back( )$/;"	kind:function	class:Vector	access:public	signature:( )
+pop_front	list.h	/^    void pop_front( )$/;"	kind:function	class:List	access:public	signature:( )
+prev	list.h	/^        Node   *prev;$/;"	kind:member	struct:List::Node	access:public
+push_back	list.h	/^    void push_back( Object && x )$/;"	kind:function	class:List	access:public	signature:( Object && x )
 push_back	list.h	/^    void push_back( Object && x )$/;"	kind:function	class:Vector	access:public	signature:( Object && x )
+push_back	list.h	/^    void push_back( const Object & x )$/;"	kind:function	class:List	access:public	signature:( const Object & x )
 push_back	list.h	/^    void push_back( const Object & x )$/;"	kind:function	class:Vector	access:public	signature:( const Object & x )
+push_back	main.cpp	/^            A.push_back(i);$/;"	kind:prototype	file:	signature:(i)
 push_back	main.cpp	/^    for (int i=1; i<=5; ++i) mylist.push_back(i); \/\/ 1 2 3 4 5$/;"	kind:prototype	file:	signature:(i)
+push_front	list.h	/^    void push_front( Object && x )$/;"	kind:function	class:List	access:public	signature:( Object && x )
+push_front	list.h	/^    void push_front( const Object & x )$/;"	kind:function	class:List	access:public	signature:( const Object & x )
 qnxnto	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	kind:variable
 require	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  int require = 0;$/;"	kind:local
-reserve	list.h	/^    void reserve( int newCapacity )$/;"	kind:function	class:Vector	access:public	signature:( int newCapacity )
+reserve	list.h	/^    void reserve( int newCapacity ) \/\/两步，迁移数据，使用新capacity$/;"	kind:function	class:Vector	access:public	signature:( int newCapacity )
 resize	list.h	/^    void resize( int newSize )$/;"	kind:function	class:Vector	access:public	signature:( int newSize )
+retrieve	list.h	/^        Object & retrieve( ) const$/;"	kind:function	class:List::const_iterator	access:protected	signature:( ) const
+size	list.h	/^    int size( ) const$/;"	kind:function	class:List	access:public	signature:( ) const
 size	list.h	/^    int size( ) const$/;"	kind:function	class:Vector	access:public	signature:( ) const
 std::cout	main.cpp	/^    std::cout << "The contents of fifth are: ";$/;"	kind:member	class:std	file:
 std::cout	main.cpp	/^    std::cout << "The contents of fifth vector are: ";$/;"	kind:member	class:std	file:
 std::cout	main.cpp	/^    std::cout << "mylist contains:";$/;"	kind:member	class:std	file:
 std::cout	main.cpp	/^    std::cout << '\\n';$/;"	kind:member	class:std	file:
+swap	list.h	/^        std::swap( head, rhs.head );$/;"	kind:prototype	class:List::std	signature:( head, rhs.head )
 swap	list.h	/^        std::swap( objects, newArray );$/;"	kind:prototype	class:Vector::std	signature:( objects, newArray )
 swap	list.h	/^        std::swap( objects, rhs.objects );$/;"	kind:prototype	class:Vector::std	signature:( objects, rhs.objects )
+swap	list.h	/^        std::swap( tail, rhs.tail );$/;"	kind:prototype	class:List::std	signature:( tail, rhs.tail )
 swap	list.h	/^        std::swap( theCapacity, rhs.theCapacity );$/;"	kind:prototype	class:Vector::std	signature:( theCapacity, rhs.theCapacity )
+swap	list.h	/^        std::swap( theSize, rhs.theSize );$/;"	kind:prototype	class:List::std	signature:( theSize, rhs.theSize )
 swap	list.h	/^        std::swap( theSize, rhs.theSize );$/;"	kind:prototype	class:Vector::std	signature:( theSize, rhs.theSize )
+tail	list.h	/^    Node *tail;$/;"	kind:member	class:List	access:private
 theCapacity	list.h	/^    int theCapacity;$/;"	kind:member	class:Vector	access:private
+theSize	list.h	/^    int   theSize;$/;"	kind:member	class:List	access:private
 theSize	list.h	/^    int theSize;$/;"	kind:member	class:Vector	access:private
 third	main.cpp	/^    std::list<int> third (second.begin(),second.end());  \/\/ iterating through second$/;"	kind:prototype	file:	signature:(second.begin(),second.end())
 thirdV	main.cpp	/^    std::vector<int> thirdV (second.begin(),second.end());  \/\/ iterating through second$/;"	kind:prototype	file:	signature:(second.begin(),second.end())
+x	list.h	/^      { insert( begin( ), x ); }$/;"	kind:local
+x	list.h	/^      { insert( end( ), x ); }$/;"	kind:local
+~List	list.h	/^    ~List( )$/;"	kind:function	class:List	access:public	signature:( )
 ~Vector	list.h	/^    ~Vector( )$/;"	kind:function	class:Vector	access:public	signature:( )
